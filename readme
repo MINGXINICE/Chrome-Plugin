@@ -1,0 +1,10 @@
+插件修改：
+
+jquery-confirm.css文件：
+confirm .jconfirm-box:添加width：60%
+
+jquery-confirm.js文件：
+this.$holder.css:注掉了'padding-bottom': this.offsetBottom,
+
+awesomplete.css
+.awesomplete 的 display: inline-block;被注掉

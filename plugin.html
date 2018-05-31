@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Test Extension</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/plugin.css">
+    <script src="plugins/qiniuupload/moxie.js"></script>
+    <script src="plugins/qiniuupload/plupload.dev.js"></script>
+    <script src="plugins/qiniuupload/i18n/zh_CN.js"></script>
+    <script src="plugins/qiniuupload/ui.js"></script>
+    <script src="plugins/qiniuupload/qiniu.js"></script>
+    <script src="plugins/qiniuupload/highlight.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.js"></script>
+    <script type="text/javascript" src="js/md5/md5.js"></script>
+    <link rel="stylesheet" href="css/autocomplete/awesomplete.css">
+    <script type="text/javascript" src="js/autocomplete/awesomplete.min.js"></script>
+    <script type="text/javascript" src="js/schedule/schedule.js"></script>
+</head>
+<body>
+<div class="container">
+    <form action="" method="post" class="STYLE-NAME dark-matter">
+        <h1>
+           <span>Please fill all the texts in the fields.</span>
+        </h1>
+        <div id="errorblock">
+
+        </div>
+        <div class="form-group" style="margin-top: 30px">
+            <label>
+                <span>Image:</span><i></i>
+            <div class="input-group">
+                <img src="img/up-bg3.png" style="width:150px;height:100px;margin-top: 3px;margin-bottom: 18px" id="thumbimg">
+            </div>
+            </label>
+        </div>
+        <div class="form-group" id="container">
+            <button type="button" class="btn btn-primary button button-green"  style=" margin: 0px 6px 20px 128px;" id="pickfiles" name="pickfiles">upload</button><div id="op-up"  class="status "></div>
+            <label>
+                <span>imageUrl:</span><i>*</i>
+            <div class="input-group">
+                <input type="text" disabled="disabled" placeholder="Upload the image" class="form-control" style=" background-color:#fff;margin-bottom: 16px;margin-right: 6px;margin-top: 2px;" id="thumbLink" name="thumbLink">
+            </div>
+            </label>
+        </div>
+        <label>
+            <span>userId:</span><i>*</i>
+            <input id="userId" type="text" name="userId" style="z-index: 0" placeholder="Fill the userId" />
+        </label>
+        <label>
+            <span>title:</span><i>*</i>
+            <input id="title" type="text" name="title" placeholder="Fill the title" />
+        </label>
+        <label>
+            <span>sourceUrl :</span><i>*</i>
+            <input id="sourceUrl" type="text" name="sourceUrl" placeholder="Fill the sourceUrl" />
+        </label>
+        <label>
+            <span>brief :</span><i></i>
+            <textarea id="brief" name="message" placeholder="Your Message to Us" maxlength="200"></textarea>
+        </label>
+        <label>
+            <span>publishTime :</span><i>*</i>
+            <input id="publishTime" type="text" name="publishTime" placeholder="Format example : 20170101" width="65%"/>
+            <div id="datebtn"></div>
+            <div id="datewrap">
+                <div id='schedule-box' class="boxshaw"></div>
+            </div>
+        </label>
+        <!--<label>-->
+            <!--<span>author :</span><i></i>-->
+            <!--<input id="author" type="text" name="author" placeholder="Fill the author" />-->
+        <!--</label>-->
+        <label>
+            <span>tags :</span><i></i>
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control pull-right"  id="tag"  name="tag" placeholder="Click the button to select tags"  readonly>
+                </div>
+            </div>
+        </label>
+        <button type="button" class="btn btn-primary button button-green"  style=" margin: 0px 6px 20px 128px;" id="tag-add-btn" name="pickfiles">addTag</button>
+        <label>
+            <span>playCount :</span><i></i>
+            <input id="playCount" type="text" name="playCount" placeholder="PlayCount must be positive zero or integer" />
+        </label>
+        <label>
+            <span>videoDuration :</span><i></i>
+            <input id="videoDuration" type="text" name="videoDuration" placeholder="Format example : 00:00 or 00:00:00" class="time"/>
+        </label>
+        <label>
+            <span>keywords :</span><i></i>
+            <input id="kws" type="text" name="kws" placeholder="Format example : action,emotion,love" />
+        </label>
+        <label>
+            <span>mark :</span><i></i>
+            <div class="markwrap">
+                <label style="display: inline-block"><input id="china" type="radio" name="mark" value="china" />&nbsp china &nbsp</label>
+                <label style="display: inline-block"><input id="foreign" type="radio" name="mark" value="foreign"  checked/>&nbsp foreign</label>
+            </div>
+        </label>
+        <label>
+            <span>&nbsp;</span><i></i>
+            <input id="send" type="button" class="button button-yellow" value="Send" />
+            <div id="op-send" class="status" ></div>
+        </label>
+    </form>
+    <div id="pop">
+        <div class="main">
+            <div class="loading">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<link rel="stylesheet" href="css/jquery-confirm.css">
+<link rel="stylesheet" href="js/themes/default/style.css">
+<script type="text/javascript" src="js/jstree.min.js"></script>
+<script type="text/javascript" src="js/jquery-confirm.js"></script>
+<script type="text/javascript" src="js/tag/tag.js"></script>
+<script type="text/javascript" src="background.js"></script>
+<script></script>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "Video Selecter",
+  "version": "1.0.3",
+  "description": "Gets information from video.",
+  "icons": {
+    "16": "img/upload16.png",
+    "48": "img/upload48.png",
+    "128": "img/upload.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["http://*.google.com/", "https://*.google.com/","tabs"],
+  "browser_action": {
+    "default_title": "Upload video info",
+    "default_popup": "plugin.html"
+  },
+  "manifest_version": 2
+}
